@@ -15,6 +15,7 @@ List<int> primes = new List<int>();
 
 // Main
 void main() {
+
 	// User Input FROM
 	stdout.write("Calculate FROM >>");
 	STRfrom = stdin.readLineSync();
@@ -58,6 +59,9 @@ void main() {
 			// Found a prime! :)
 			primes.add(i);
 			print("Prime Found: $i");
+
 		}
+
 	}
+	
 }
