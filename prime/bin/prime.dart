@@ -1,6 +1,7 @@
 //	AUTHOR:  Groove
 //	DATE:	 July 03 2020
 //	PURPOSE: Calculating Prime numbers
+
 import "dart:io";
 import "dart:convert";
 var STRcount;
@@ -11,7 +12,7 @@ void main() {
 	STRcount = stdin.readLineSync();
 	count = int.parse(STRcount);
 	stdout.write("Calculating $STRcount Primes...");
-	for(var i = 2; primes.length < count; i++){
+	for(var i = 2; i < count; i++){
 		var bDiv = false;
 		for(var y = 0; y < primes.length; y++){
 			if(i % primes[y] == 0){
